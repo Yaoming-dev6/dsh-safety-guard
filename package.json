@@ -1,0 +1,47 @@
+{
+  "name": "dsh-safety-guard",
+  "version": "1.0.2",
+  "description": "DSH 配置保护：自检、写入提示、受限快照与离线恢复",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "safety",
+    "crash-guard",
+    "change-gate",
+    "snapshot"
+  ],
+  "license": "MIT",
+  "type": "module",
+  "main": "./lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./core": "./lib/core.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib/index.js",
+    "lib/core.js",
+    "lib/panel.html",
+    "lib/panel.js",
+    "maintenance.mjs",
+    "install.ps1",
+    "uninstall.ps1",
+    "restore.ps1",
+    "cordis.patch.yml",
+    "README.md",
+    "INSTALL.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=24.9.0",
+    "dsh": ">=0.2.2-rc.5 <0.2.3-0"
+  },
+  "dependencies": {},
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

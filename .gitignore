@@ -1,0 +1,16 @@
+node_modules/
+dist/
+coverage/
+.env
+.env.*
+.npmrc
+*.pem
+*.key
+*.log
+*.zip
+*.tgz
+*.sha256
+.dsh/
+states/
+*.rollback-bad-*
+*.bak-safety-*

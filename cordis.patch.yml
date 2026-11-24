@@ -1,0 +1,8 @@
+# dsh-safety-guard bundle patch：注册宿主 fiber（name 必须等于包名）
+- insert:
+    - id: dsh-safety-guard
+      name: dsh-safety-guard
+      config:
+        watchMs: 15000      # 后台检测间隔（毫秒）
+        guardMode: warn     # warn | block | off
+        # profileName: auto  # 默认自动探测；要固定就写 profiles 下的目录名
